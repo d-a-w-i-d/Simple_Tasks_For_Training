@@ -1,0 +1,7 @@
+print "***Calculate area of rectangle***\n"
+a = int(raw_input("Width: "))
+b = int(raw_input("Height: "))
+if a == b:
+    print "It's a square! Wow! Here is your result for area: ", a*b
+else:
+    print "Area: ", a*b
