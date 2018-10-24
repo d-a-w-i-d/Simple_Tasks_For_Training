@@ -1,0 +1,16 @@
+operation = raw_input("Choose operation: + , - , / , * ")
+a = raw_input("First value: ")
+b = raw_input("Second value: ")
+if operation == "+":
+    print "Result: ", float(a) + float(b)
+elif operation == "-":
+    print "Result: ", float(a) - float(b)
+elif operation == "/":
+    if b == "0":
+        print "Error"
+    else:
+        print "Result: ", float(a) / float(b)
+elif operation == "*":
+    print "Result: ", float(a) * float(b)
+else:
+    print "Operation chosen poorly. No result."
