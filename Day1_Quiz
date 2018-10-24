@@ -1,0 +1,29 @@
+# Quiz
+# List of questions and answers
+
+quiz_dict = {
+    "1. Loop that iterates is: " : "for",
+    "2. 'Elseif' in python is: " : "elif",
+    "3. At the end of each python statement semicolon is needed: " : "False",
+    "4. Most famous snake in scripting is: " : "Python",
+    "5. What is the least favourite motorcycle of pythonist: " : "Java",
+    "6. Which volcano is hated by pythonist: " : "Java",
+    "7. Which jewelery is not going to be used by pythonist: " : "perl",
+    "8. Why java devs wear glasses? Because they can't... : " : "C#",
+    "9. List cannot be changed: " : "False",
+    "10. Tuple cannot be changed: " : "True"
+    }
+
+total = 0
+for key in quiz_dict.keys():
+    answer = raw_input(key)
+    if answer.lower() == quiz_dict[key].lower():
+        print "Correct\n"
+        total += 1
+    else:
+        print "Incorrect\n"
+total *= 10
+if total > 50:
+    print "Test passed. Your result:", total, "%"
+else:
+    print "Test failed. Your result:", total, "%"
