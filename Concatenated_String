@@ -1,0 +1,3 @@
+places = ['Earth', 'Poland', 'Wroclaw']
+concatenated_string = places[0] + " -> " + places[1] + " -> " + places[2]
+print concatenated_string
