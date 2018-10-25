@@ -1,0 +1,7 @@
+import random
+list_to_sort = []
+for i in range(10):
+    list_to_sort.append(random.randrange(0, 100))
+print "Before sorting:", list_to_sort
+list_to_sort.sort()
+print "After sorting:", list_to_sort
