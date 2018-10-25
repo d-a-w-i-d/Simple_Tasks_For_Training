@@ -1,0 +1,9 @@
+my_dict = {
+    2 : "sth",
+    5 : "sth_else",
+    6 : "sth_different",
+    8 : "sth_again",
+    14: "100"
+    }
+for item in my_dict:
+    print "Key:",item, ", Value:", my_dict[item]
