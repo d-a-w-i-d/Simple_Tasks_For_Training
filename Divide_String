@@ -1,0 +1,12 @@
+given_str = '/bin:/usr/bin:/usr/local/bin'
+new_list = []
+start = 0
+index = 0
+for letter in given_str[start:]:
+    if letter == ":":
+        index = start + given_str[start:].index(letter)
+        new_list.append(given_str[start:index])
+        start = given_str[start:].index(letter) + 1
+new_list.append(given_str[index + 1:])
+print "Given string:", given_str
+print "List with parts of given string:", new_list
