@@ -1,0 +1,4 @@
+lst = ["cat", 7, True, -100]
+print "List:", lst
+for ind in range(len(lst)):
+    print "On index {0} you've got value: {1}".format(ind, lst[ind])
